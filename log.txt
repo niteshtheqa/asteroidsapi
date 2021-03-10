@@ -1,0 +1,139 @@
+Request method:	GET
+Request URI:	https://ssd-api.jpl.nasa.gov/cad.api?des=433&date-min=1900-01-01&date-max=2100-01-01&dist-max=0.2
+Proxy:			<none>
+Request params:	<none>
+Query params:	des=433
+				date-min=1900-01-01
+				date-max=2100-01-01
+				dist-max=0.2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 10 Mar 2021 18:52:37 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Access-Control-Allow-Origin: *
+
+{
+    "signature": {
+        "source": "NASA/JPL SBDB Close Approach Data API",
+        "version": "1.1"
+    },
+    "count": "5",
+    "fields": [
+        "des",
+        "orbit_id",
+        "jd",
+        "cd",
+        "dist",
+        "dist_min",
+        "dist_max",
+        "v_rel",
+        "v_inf",
+        "t_sigma_f",
+        "h"
+    ],
+    "data": [
+        [
+            "433",
+            "658",
+            "2426371.671253121",
+            "1931-Jan-30 04:07",
+            "0.174073164088667",
+            "0.174072995458928",
+            "0.174073332722859",
+            "5.92081851998368",
+            "5.91823272773978",
+            "< 00:01",
+            "10.4"
+        ],
+        [
+            "433",
+            "658",
+            "2442435.819063704",
+            "1975-Jan-23 07:39",
+            "0.151134183386476",
+            "0.151134128302004",
+            "0.151134238471009",
+            "5.82530760111607",
+            "5.8222803834518",
+            "< 00:01",
+            "10.4"
+        ],
+        [
+            "433",
+            "658",
+            "2455957.958756580",
+            "2012-Jan-31 11:01",
+            "0.178675813750514",
+            "0.178675792590141",
+            "0.178675834910886",
+            "5.94519572815633",
+            "5.942686893297",
+            "< 00:01",
+            "10.4"
+        ],
+        [
+            "433",
+            "658",
+            "2472021.960373861",
+            "2056-Jan-24 11:03",
+            "0.149782176326085",
+            "0.149782127556474",
+            "0.149782225095738",
+            "5.8207578007406",
+            "5.81770086191799",
+            "< 00:01",
+            "10.4"
+        ],
+        [
+            "433",
+            "658",
+            "2485544.157496116",
+            "2093-Jan-31 15:47",
+            "0.182463840598402",
+            "0.182463647880772",
+            "0.182464033319994",
+            "5.97491340339766",
+            "5.97246888798358",
+            "< 00:01",
+            "10.4"
+        ]
+    ]
+}
+Request method:	GET
+Request URI:	https://ssd-api.jpl.nasa.gov/cad.api?des=433&date-min=1900-01-01&date-min=2018-01-01&date-max=2100-01-01&dist-max=10LD&sort=dist
+Proxy:			<none>
+Request params:	<none>
+Query params:	des=433
+				date-min=[1900-01-01, 2018-01-01]
+				date-max=2100-01-01
+				dist-max=10LD
+				sort=dist
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 10 Mar 2021 18:52:39 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+Access-Control-Allow-Origin: *
+
+{
+    "moreInfo": "https://ssd-api.jpl.nasa.gov/doc/cad.html",
+    "message": "parameter 'date-min' specified more than once",
+    "code": "400"
+}
