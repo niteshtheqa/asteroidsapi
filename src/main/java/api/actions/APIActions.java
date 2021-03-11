@@ -7,15 +7,14 @@ package api.actions;
 
 import static io.restassured.RestAssured.given;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.http.ContentType;
+import org.testng.Reporter;
+
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import parameters.QueryParameters;
 import specifications.Builders;
 
 /**
@@ -23,23 +22,45 @@ import specifications.Builders;
  *
  */
 public class APIActions {
+
+	Builders builders = new Builders();
 	public RequestSpecification reqSpec;
 	public ResponseSpecification resSpec;
 	public Response response;
+	public QueryParameters param;
 
 	public Response getEarthCloseApproachSortData() throws IOException {
-		response = given().spec(Builders.requestSpecification().queryParam("dist-max", "10LD")
-				.queryParam("date-min", "2018-01-01").queryParam("sort", "dist")).when().get();		
+		param = new QueryParameters();
+		param.setSort("-dist");
+		param.setDate_min("1900-01-01");
+		param.setDist_max("10LD");
+
+		response = given().spec(builders.requestSpecification().queryParam("dist-max", param.getDist_max())
+				.queryParam("date-min", param.getDate_min()).queryParam("sort", param.getSort())).when().get();
+
 		return response;
-	
 
 	}
-//
+
 	public Response getAllCloseApproachAsteroidData() throws IOException {
-		response = given().spec(Builders.requestSpecification().queryParam("des", "433")
-				.queryParam("date-min", "1900-01-01").queryParam("date-max", "2100-01-01")).queryParam("dist-max", "0.2").when().get();
+		param = new QueryParameters();
+		param.setDes("433");
+		param.setDate_max("2100-01-01");
+		param.setDate_min("1900-01-01");
+		param.setDist_max("0.2");
+		
+		
+		
+		Reporter.log("des : "+param.getDes());
+		Reporter.log("date-min :"+param.getDate_max());
+		Reporter.log(param.getDate_min());
+		Reporter.log(param.getDist_max());
+
+		response = given()
+				.spec(builders.requestSpecification().queryParam("des", param.getDes())
+						.queryParam("date-min", param.getDate_min()).queryParam("date-max", param.getDate_max())
+				.queryParam("dist-max", param.getDist_max())).when().get();
 		return response;
-	
 
 	}
 

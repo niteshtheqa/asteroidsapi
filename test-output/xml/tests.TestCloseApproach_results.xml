@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="28.333">
+  <properties />
+  
+  
+            <testcase name="TestAllCloseApproachAsteroidData" time="4.449" classname="tests.TestCloseApproach" />
+                <testcase name="TestEarthCloseApproachData" time="22.283" classname="tests.TestCloseApproach" />
+                <testcase name="TestAllCloseApproachAsteroidResponseIsNotNull" time="1.601" classname="tests.TestCloseApproach" />
+      
+</testsuite>

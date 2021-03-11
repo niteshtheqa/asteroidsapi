@@ -14,7 +14,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 10 Mar 2021 18:52:37 GMT
+Date: Thu, 11 Mar 2021 20:14:14 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -24,7 +24,7 @@ Access-Control-Allow-Origin: *
 {
     "signature": {
         "source": "NASA/JPL SBDB Close Approach Data API",
-        "version": "1.1"
+        "version": "1.2"
     },
     "count": "5",
     "fields": [
@@ -38,7 +38,9 @@ Access-Control-Allow-Origin: *
         "v_rel",
         "v_inf",
         "t_sigma_f",
-        "h"
+        "h",
+        "diameter",
+        "diameter_sigma"
     ],
     "data": [
         [
@@ -52,7 +54,9 @@ Access-Control-Allow-Origin: *
             "5.92081851998368",
             "5.91823272773978",
             "< 00:01",
-            "10.4"
+            "10.4",
+            "16.84",
+            "0.06"
         ],
         [
             "433",
@@ -65,7 +69,9 @@ Access-Control-Allow-Origin: *
             "5.82530760111607",
             "5.8222803834518",
             "< 00:01",
-            "10.4"
+            "10.4",
+            "16.84",
+            "0.06"
         ],
         [
             "433",
@@ -78,7 +84,9 @@ Access-Control-Allow-Origin: *
             "5.94519572815633",
             "5.942686893297",
             "< 00:01",
-            "10.4"
+            "10.4",
+            "16.84",
+            "0.06"
         ],
         [
             "433",
@@ -91,7 +99,9 @@ Access-Control-Allow-Origin: *
             "5.8207578007406",
             "5.81770086191799",
             "< 00:01",
-            "10.4"
+            "10.4",
+            "16.84",
+            "0.06"
         ],
         [
             "433",
@@ -104,36 +114,9 @@ Access-Control-Allow-Origin: *
             "5.97491340339766",
             "5.97246888798358",
             "< 00:01",
-            "10.4"
+            "10.4",
+            "16.84",
+            "0.06"
         ]
     ]
-}
-Request method:	GET
-Request URI:	https://ssd-api.jpl.nasa.gov/cad.api?des=433&date-min=1900-01-01&date-min=2018-01-01&date-max=2100-01-01&dist-max=10LD&sort=dist
-Proxy:			<none>
-Request params:	<none>
-Query params:	des=433
-				date-min=[1900-01-01, 2018-01-01]
-				date-max=2100-01-01
-				dist-max=10LD
-				sort=dist
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 400 Bad Request
-Date: Wed, 10 Mar 2021 18:52:39 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: nginx
-Access-Control-Allow-Origin: *
-
-{
-    "moreInfo": "https://ssd-api.jpl.nasa.gov/doc/cad.html",
-    "message": "parameter 'date-min' specified more than once",
-    "code": "400"
 }
