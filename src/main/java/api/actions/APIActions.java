@@ -48,18 +48,16 @@ public class APIActions {
 		param.setDate_max("2100-01-01");
 		param.setDate_min("1900-01-01");
 		param.setDist_max("0.2");
-		
-		
-		
-		Reporter.log("des : "+param.getDes());
-		Reporter.log("date-min :"+param.getDate_max());
+
+		Reporter.log("des : " + param.getDes());
+		Reporter.log("date-min :" + param.getDate_max());
 		Reporter.log(param.getDate_min());
 		Reporter.log(param.getDist_max());
 
-		response = given()
-				.spec(builders.requestSpecification().queryParam("des", param.getDes())
-						.queryParam("date-min", param.getDate_min()).queryParam("date-max", param.getDate_max())
+		response = given().spec(builders.requestSpecification().queryParam("des", param.getDes())
+				.queryParam("date-min", param.getDate_min()).queryParam("date-max", param.getDate_max())
 				.queryParam("dist-max", param.getDist_max())).when().get();
+
 		return response;
 
 	}

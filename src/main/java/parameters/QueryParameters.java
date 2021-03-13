@@ -18,6 +18,9 @@ public class QueryParameters {
 	private String date_min;
 	private String date_max;
 	private String sort;
+	private int h_min;
+	private int h_max;
+	private String class_;
 
 	/**
 	 * @return the des
@@ -117,4 +120,48 @@ public class QueryParameters {
 		this.sort = sort;
 	}
 
+	/**
+	 * @return the h_min
+	 */
+	public int getH_min() {
+		return h_min;
+	}
+
+	/**
+	 * @param h_min the h_min to set
+	 */
+	public void setH_min(int h_min) {
+		this.h_min = h_min;
+	}
+
+	/**
+	 * @return the h_max
+	 */
+	public int getH_max() {
+		return h_max;
+	}
+
+	/**
+	 * @param h_max the h_max to set
+	 */
+	public void setH_max(int h_max) {
+		this.h_max = h_max;
+	}
+
+	/**
+	 * @return the class_
+	 */
+	public String getClass_() {
+		return class_;
+	}
+
+	/**
+	 * @param class_ the class_ to set
+	 */
+	public void setClass_(String class_) {
+		this.class_ = class_;
+	}
+
+	
+	
 }
