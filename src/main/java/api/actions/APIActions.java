@@ -27,29 +27,45 @@ public class APIActions {
 	public Response response;
 	public QueryParameters param;
 
-	public Response getEarthCloseApproachSortData() throws IOException {
+	public Response getEarthCloseApproachSortDesc() throws IOException {
 		param = new QueryParameters();
 		param.setSort("-dist");
-		param.setDate_min("1900-01-01");
-		param.setDist_max("10LD");
+		param.setDateMin("2020-01-01");
+		param.setDistMax("10LD");
 
-		response = given().spec(builders.requestSpecification().queryParam("dist-max", param.getDist_max())
-				.queryParam("date-min", param.getDate_min()).queryParam("sort", param.getSort())).when().get();
+		response = given().spec(builders.requestSpecification().queryParam("dist-max", param.getDistMax())
+				.queryParam("date-min", param.getDateMin()).queryParam("sort", param.getSort())).when().get();
 
 		return response;
 
 	}
 
+	
+	public Response getEarthCloseApproachSortAsc() throws IOException {
+		param = new QueryParameters();
+		param.setSort("dist");
+		param.setDateMin("2021-01-01");
+		param.setDateMax("2021-02-01");
+		param.setDistMax("5LD");
+
+		response = given().spec(builders.requestSpecification().queryParam("dist-max", param.getDistMax())
+				.queryParam("date-min", param.getDateMin()).queryParam("date-max", param.getDateMax()).queryParam("sort", param.getSort())).when().get();
+
+		return response;
+
+	}
+	
+	
 	public Response getAllCloseApproachAsteroidData() throws IOException {
 		param = new QueryParameters();
 		param.setDes("433");
-		param.setDate_max("2100-01-01");
-		param.setDate_min("1900-01-01");
-		param.setDist_max("0.2");
+		param.setDateMax("2100-01-01");
+		param.setDateMin("1900-01-01");
+		param.setDistMax("0.2");
 
 		response = given().spec(builders.requestSpecification().queryParam("des", param.getDes())
-				.queryParam("date-min", param.getDate_min()).queryParam("date-max", param.getDate_max())
-				.queryParam("dist-max", param.getDist_max())).when().get();
+				.queryParam("date-min", param.getDateMin()).queryParam("date-max", param.getDateMax())
+				.queryParam("dist-max", param.getDistMax())).when().get();
 
 		return response;
 
@@ -59,13 +75,13 @@ public class APIActions {
 
 		param = new QueryParameters();
 		param.setDes(des);
-		param.setDate_max("2100-01-01");
-		param.setDate_min("1900-01-01");
-		param.setDist_max("0.2");
+		param.setDateMax("2100-01-01");
+		param.setDateMin("1900-01-01");
+		param.setDistMax("0.2");
 
 		response = given().spec(builders.requestSpecification().queryParam("des", param.getDes())
-				.queryParam("date-min", param.getDate_min()).queryParam("date-max", param.getDate_max())
-				.queryParam("dist-max", param.getDist_max())).when().get();
+				.queryParam("date-min", param.getDateMin()).queryParam("date-max", param.getDateMax())
+				.queryParam("dist-max", param.getDistMax())).when().get();
 		return response;
 
 	}

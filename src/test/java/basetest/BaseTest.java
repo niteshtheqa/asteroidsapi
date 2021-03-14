@@ -3,7 +3,7 @@
  * @Project Title  AutomationPractice
  * 
  */
-package tests;
+package basetest;
 
 import java.io.IOException;
 
@@ -23,6 +23,7 @@ import utils.Utils;
 public class BaseTest {
 	public APIActions apiActions;
 	public Response response;
+	
 
 	public BaseTest() {
 		RestAssured.baseURI = "https://ssd-api.jpl.nasa.gov/cad.api";
