@@ -3,7 +3,7 @@
  * @Project Title  AutomationPractice
  * 
  */
-package parameters;
+package commons;
 
 /**
  * @author nites

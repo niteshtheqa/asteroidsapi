@@ -84,7 +84,7 @@ public class ExtentReportListner  implements ITestListener{
 	}
 
 	public void onStart(ITestContext context) {
-		System.out.println(ReportLocation + "  ReportLocation");
+		//System.out.println(ReportLocation + "  ReportLocation");
 		reports = new ExtentReports(ReportLocation + "ExtentReport.html");
 		test = reports.startTest("");
 
