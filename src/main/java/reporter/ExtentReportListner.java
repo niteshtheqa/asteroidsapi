@@ -1,8 +1,4 @@
-/**
- * @author Nitesh Wayafalkar
- * @Project Title  AutomationPractice
- * 
- */
+
 package reporter;
 
 import java.io.File;
@@ -15,19 +11,21 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-
 /**
- * @author nites
- *
+ * @author Nitesh Wayafalkar
+ * @Project Title SBDB - API Automation
+ * 
+ *          This class generates detailed report for test execution
  */
-public class ExtentReportListner  implements ITestListener{
+public class ExtentReportListner implements ITestListener {
 	protected static ExtentReports reports;
 	protected static ExtentTest test;
 
 	private static String resultpath = getResultPath();
 
-
+	/**
+	 * @param directory
+	 */
 	public static void deleteDirectory(File directory) {
 		if (directory.exists()) {
 			File[] files = directory.listFiles();
@@ -44,9 +42,12 @@ public class ExtentReportListner  implements ITestListener{
 		}
 	}
 
+	/**
+	 * @return
+	 */
 	private static String getResultPath() {
 
-		resultpath = "test";//new SimpleDateFormat("yyyy-MM-dd hh-mm.ss").format(new Date());
+		resultpath = "test";// new SimpleDateFormat("yyyy-MM-dd hh-mm.ss").format(new Date());
 		if (!new File(resultpath).isDirectory()) {
 			new File(resultpath);
 		}
@@ -84,7 +85,7 @@ public class ExtentReportListner  implements ITestListener{
 	}
 
 	public void onStart(ITestContext context) {
-		//System.out.println(ReportLocation + "  ReportLocation");
+		// System.out.println(ReportLocation + " ReportLocation");
 		reports = new ExtentReports(ReportLocation + "ExtentReport.html");
 		test = reports.startTest("");
 
@@ -96,4 +97,3 @@ public class ExtentReportListner  implements ITestListener{
 
 	}
 }
-	

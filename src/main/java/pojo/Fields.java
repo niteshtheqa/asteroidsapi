@@ -1,17 +1,15 @@
-/**
- * @author Nitesh Wayafalkar
- * @Project Title  AutomationPractice
- * 
- */
+
 package pojo;
 
 import java.math.BigDecimal;
 
 /**
- * @author nites
- *
+ * @author Nitesh Wayafalkar
+ * @Project Title SBDB - API Automation
+ * 
+ * This is POJO class for fields from Response and use to set the values as well as read the value from De-Serialized response
+ * 
  */
-
 public class Fields {
 
 	private String des;

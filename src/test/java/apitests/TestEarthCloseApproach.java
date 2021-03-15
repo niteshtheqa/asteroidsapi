@@ -1,102 +1,94 @@
-/**
- * @author Nitesh Wayafalkar
- * @Project Title  AutomationPractice
- * 
- */
+
 package apitests;
 
-import static org.junit.Assert.assertTrue;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
+import org.apache.log4j.Logger;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 import basetest.BaseTest;
 import commons.CommonFunctions;
 import commons.QueryParameters;
 import pojo.Fields;
 import pojo.ResponsePojo;
+import reporter.ExtentReportListner;
 import utils.Utils;
 
 /**
  * @author Nitesh Wayafalkar
- *
+ * @Project Title SBDB - API Automation
+ * 
  */
-public class TestEarthCloseApproach extends BaseTest {
-	public QueryParameters param = new QueryParameters();
 
+@Listeners(ExtentReportListner.class)
+public class TestEarthCloseApproach extends BaseTest {
+	
+	static final Properties Log4j = new Properties();
+	public static Logger LOGGER = Logger.getLogger(TestEarthCloseApproach.class);
+
+	
+	public QueryParameters param = new QueryParameters();
+	public static ExtentReports report;
+	public static ExtentTest logger;
+	
 	@Test(enabled = true, description = "Verify Earth close-approach sorted data by distance in Descending Order")
 	public void TestEarthCloseApproachSortedDescending() throws IOException {
-
+		
+		String sort = "-dist";
+		boolean result = false;
 		// De-serialization of Response
-		ResponsePojo data = apiActions.getEarthCloseApproachSortDesc().getBody().as(ResponsePojo.class);
+		ResponsePojo data = apiActions.getEarthCloseApproachSort(sort).getBody().as(ResponsePojo.class);
 		CommonFunctions.assertCount(data.getCount());
 		CommonFunctions.assertSignature(data.getSignature().getSource(), data.getSignature().getVersion());
-
-		List<Fields> fields = Utils.extractAndSetFields(data);
-		List<BigDecimal> listOfDist = new ArrayList<BigDecimal>();
-		for (int i = 0; i < fields.size(); i++) {
-			listOfDist.add(fields.get(i).getDist());
-
+		try {
+			List<Fields> fields = Utils.extractAndSetFields(data);
+			List<BigDecimal> listOfDist = new ArrayList<BigDecimal>();
+			for (int i = 0; i < fields.size(); i++) {
+				listOfDist.add(fields.get(i).getDist());
+				result = CommonFunctions.verifySortedData(listOfDist, 1);
+			}
+		} catch (NumberFormatException e) {
+			LOGGER.error("Expecting data type as BigDecimal" + e.getLocalizedMessage());
 		}
-		boolean result = CommonFunctions.verifySortedData(listOfDist, 1);
-		assertTrue(result, "Dist values are not in descending order");
+
+		assertTrue(result, "Data is not in descending order");
 
 	}
 
 	@Test(enabled = true, description = "Verify Earth close-approach sorted data by distance in Ascending Order")
 	public void TestEarthCloseApproachSortedAscending() throws IOException {
+		String sort = "dist";
+		try {
+			boolean result = false;
+			// De-serialization of Response
+			ResponsePojo data = apiActions.getEarthCloseApproachSort(sort).getBody().as(ResponsePojo.class);
+			CommonFunctions.assertCount(data.getCount());
+			CommonFunctions.assertSignature(data.getSignature().getSource(), data.getSignature().getVersion());
 
-		// De-serialization of Response
-		ResponsePojo data = apiActions.getEarthCloseApproachSortAsc().getBody().as(ResponsePojo.class);
-		CommonFunctions.assertCount(data.getCount());
-		CommonFunctions.assertSignature(data.getSignature().getSource(), data.getSignature().getVersion());
+			List<Fields> fields = Utils.extractAndSetFields(data);
 
-		List<Fields> fields = Utils.extractAndSetFields(data);
-		List<BigDecimal> listOfDist = new ArrayList<BigDecimal>();
-		for (int i = 0; i < fields.size(); i++) {
-			listOfDist.add(fields.get(i).getDist());
+			List<BigDecimal> listOfDist = new ArrayList<BigDecimal>();
+			for (int i = 0; i < fields.size(); i++) {
+				listOfDist.add(fields.get(i).getDist());
+				result = CommonFunctions.verifySortedData(listOfDist, -1);
+			}
 
+			assertTrue(result, "Data is not in ascending order");
+		} catch (NumberFormatException e) {
+			LOGGER.error("Expecting data type as BigDecimal" + e.getLocalizedMessage());
 		}
-		boolean result = CommonFunctions.verifySortedData(listOfDist, -1);
-		assertTrue(result, "Dist values are not in ascending order");
 
 	}
 
 	
-	@Test(description="Need to Fix",enabled =false)
-	public void TestEarthCloseApproachAsteroidBetweenDateRange() throws IOException, ParseException {
-		String dateMin = "2021-01-01";
-		String dateMax = "2021-02-01";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MMM-dd");
-
-		// Checking response is having at least one record
-		ResponsePojo data = apiActions.getEarthCloseApproachSortAsc().getBody().as(ResponsePojo.class);
-		CommonFunctions.assertCount(data.getCount());
-		CommonFunctions.assertSignature(data.getSignature().getSource(), data.getSignature().getVersion());
-
-		List<Fields> fields = Utils.extractAndSetFields(data);
-		for (int i = 0; i < fields.size(); i++) {
-			Date convertedDate = sdf.parse(fields.get(i).getCd());
-			String date1 = sdf.format(convertedDate);
-			System.out.println(date1);
-			
-			long yearOfCloseApproach = Long.parseLong(date1.substring(0, 4));
-			boolean monthOfCloseApproach = date1.substring(5, 8) == "Jan";
-			System.out.println(Integer.parseInt(dateMin.substring(0, 4)) +""+(yearOfCloseApproach > Long.parseLong(dateMin.substring(0, 4).trim())));
-			assertTrue("time of close-approach is less than Min Date",
-					yearOfCloseApproach > Long.parseLong(dateMin.substring(0, 4)));
-			assertTrue("time of close-approach is greater than Max Date",
-					yearOfCloseApproach < Integer.parseInt(dateMax.substring(0, 4)) || !monthOfCloseApproach);
-
-		}
-
-	}
 }

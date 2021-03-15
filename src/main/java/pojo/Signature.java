@@ -1,13 +1,14 @@
-/**
- * @author Nitesh Wayafalkar
- * @Project Title  AutomationPractice
- * 
- */
+
 package pojo;
 
 /**
- * @author nites
- *
+ * @author Nitesh Wayafalkar
+ * @Project Title SBDB - API Automation
+ * 
+ * 
+ *          This is POJO class to read Signature Response and use to set the values as
+ *          well as read the value from De-Serialized response
+ * 
  */
 public class Signature {
 	private String source;
