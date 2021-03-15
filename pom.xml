@@ -157,19 +157,10 @@
 	<build>
 
 		<plugins>
-		<!--	<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-
-				<configuration>
-					<verbose>true</verbose>
-					<fork>true</fork>
-					<executable>${java.home}</executable>
-					<compilerVersion>1.8</compilerVersion>
-					<maven.compiler.release>1.8</maven.compiler.release>
-				</configuration>
-			</plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+				<version>3.8.1</version> <configuration> <verbose>true</verbose> <fork>true</fork> 
+				<executable>${java.home}</executable> <compilerVersion>1.8</compilerVersion> 
+				<maven.compiler.release>1.8</maven.compiler.release> </configuration> </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -183,10 +174,13 @@
 
 
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<maven.compiler.release>1.8</maven.compiler.release>
+				</configuration>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
