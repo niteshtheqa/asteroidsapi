@@ -1,0 +1,15 @@
+Request method:	GET
+Request URI:	https://ssd-api.jpl.nasa.gov/cad.api?des=433&date-min=1900-01-01&date-max=2100-01-01&dist-max=0.2
+Proxy:			<none>
+Request params:	<none>
+Query params:	des=433
+				date-min=1900-01-01
+				date-max=2100-01-01
+				dist-max=0.2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
