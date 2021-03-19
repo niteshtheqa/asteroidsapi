@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 28.381s
+  Test duration: 38.664s
 </p>
 
 
@@ -27,41 +27,43 @@
             
 <tr>
   <td class="method">
-                  <span class="description" title="get all close-approach data for asteroid 433 Eros within 0.2 au between 1900-Jan-01 and 2100-Jan-01">TestAllCloseApproachAsteroidData</span>
+                  <span class="description" title="get all close-approach data for asteroid 433 Eros within 0.2 au between 1900-Jan-01 and 2100-Jan-01">TestAllCloseApproachAsteroidBetweenDateRange</span>
       </td>
   <td class="duration">
-    4.449s
+    4.983s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        des : 433<br />
-                                date-min :2100-01-01<br />
-                                1900-01-01<br />
-                                0.2<br />
-                  </div>
-    
+        
 
       </td>
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="get all close-approach data for asteroid 433 Eros within 0.2 au between 1900-Jan-01 and 2100-Jan-01">TestAllCloseApproachAsteroidResponseIsNotNull</span>
+                  <span class="description" title="Verify all close-approach data is not NULL/Empty">TestAllCloseApproachAsteroidResponseIsNotNull</span>
       </td>
   <td class="duration">
-    1.601s
+    1.724s
   </td>
   <td class="result">
         
     
-            <div class="testOutput">
-                        des : 433<br />
-                                date-min :2100-01-01<br />
-                                1900-01-01<br />
-                                0.2<br />
-                  </div>
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="get all close-approach data for asteroid 433 Eros within 0.2 au">TestAllCloseApproachAsteroidWithinDistanceRange</span>
+      </td>
+  <td class="duration">
+    1.734s
+  </td>
+  <td class="result">
+        
     
+        
 
       </td>
 </tr>
@@ -70,10 +72,40 @@
                   <span class="description" title="get Earth close-approach data for NEOs within 10 lunar distances on or after 2018-Jan-01 sorted by distance">TestEarthCloseApproachData</span>
       </td>
   <td class="duration">
-    22.283s
+    26.851s
   </td>
   <td class="result">
         
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Verify Orbit ID with different inputs of Designation">TestOrbitIDWithRespectiveDesignationValue</span>
+      </td>
+  <td class="duration">
+    1.645s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"433", "658"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="Verify Orbit ID with different inputs of Designation">TestOrbitIDWithRespectiveDesignationValue</span>
+      </td>
+  <td class="duration">
+    1.688s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"141P", "K202/2"</span><br />
     
         
 

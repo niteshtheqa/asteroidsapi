@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="3"
+           tests="6"
            failures="0"
            errors="0"
            skipped="0"
-           time="28.333">
+           time="38.625">
   <properties />
   
   
-            <testcase name="TestAllCloseApproachAsteroidData" time="4.449" classname="tests.TestCloseApproach" />
-                <testcase name="TestEarthCloseApproachData" time="22.283" classname="tests.TestCloseApproach" />
-                <testcase name="TestAllCloseApproachAsteroidResponseIsNotNull" time="1.601" classname="tests.TestCloseApproach" />
+            <testcase name="TestEarthCloseApproachData" time="26.851" classname="tests.TestCloseApproach" />
+                <testcase name="TestOrbitIDWithRespectiveDesignationValue" time="1.688" classname="tests.TestCloseApproach" />
+                <testcase name="TestAllCloseApproachAsteroidBetweenDateRange" time="4.983" classname="tests.TestCloseApproach" />
+                <testcase name="TestAllCloseApproachAsteroidResponseIsNotNull" time="1.724" classname="tests.TestCloseApproach" />
+                <testcase name="TestOrbitIDWithRespectiveDesignationValue" time="1.645" classname="tests.TestCloseApproach" />
+                <testcase name="TestAllCloseApproachAsteroidWithinDistanceRange" time="1.734" classname="tests.TestCloseApproach" />
       
 </testsuite>

@@ -30,6 +30,7 @@ public class CommonFunctions {
 		try {
 			assertTrue(data > 0);
 		} catch (Exception e) {
+
 			LOGGER.error("No records found");
 		}
 	}
@@ -43,8 +44,8 @@ public class CommonFunctions {
 	 */
 	public static void assertSignature(String source, double version) {
 		try {
-			assertTrue(version == 1.2 && source.equals("NASA/JPL SBDB Close Approach Data API"));
-		} catch (Exception e) {
+			assertTrue(version == 1.3 && source.equals("NASA/JPL SBDB Close Approach Data API"));
+		} catch (Error e) {
 			LOGGER.error("Signature is invalid");
 		}
 	}
@@ -60,6 +61,8 @@ public class CommonFunctions {
 	public static void assertOrbitIDs(List<Fields> fields, int i, String value) {
 		try {
 			assertTrue(value.equals(fields.get(i).getOrbitId()));
+		} catch (NullPointerException e) {
+			LOGGER.error("Values are empty");
 		} catch (Exception e) {
 			LOGGER.error("Expected Ordbit Id is not received");
 		}
@@ -90,8 +93,11 @@ public class CommonFunctions {
 				}
 				previous = current;
 			}
-		} catch (Exception e) {
-			LOGGER.error("List of Dist is empty");
+		} catch (NumberFormatException e) {
+			LOGGER.error("Data type is not compatible");
+			return false;
+		} catch (NullPointerException e) {
+			LOGGER.error("Data did not received");
 			return false;
 		}
 		return false;

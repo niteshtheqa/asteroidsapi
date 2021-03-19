@@ -24,19 +24,19 @@ import pojo.ResponsePojo;
  * @author Nitesh Wayafalkar
  * @Project Title SBDB - API Automation
  * 
- * This is Utility class. All utility methods with static modifiers.
- * This is having methods to read JSON key, extract data from Response to validate different element based on requirement
+ *          This is Utility class. All utility methods with static modifiers.
+ *          This is having methods to read JSON key, extract data from Response
+ *          to validate different element based on requirement
  */
 public class Utils {
 
 	static final Properties Log4j = new Properties();
 	public static Logger LOGGER = Logger.getLogger(Utils.class);
 
-
 	/**
 	 * @return Property object
 	 * 
-	 * This loads properties file 
+	 *         This loads properties file
 	 */
 	public static Properties loadProperties() {
 		String PATH = Paths.get("./src/main/java/configurations/config.properties").toAbsolutePath().normalize()
@@ -63,7 +63,7 @@ public class Utils {
 	 * @param key
 	 * @return
 	 * 
-	 * This method allows user to read data stored in key-value format
+	 * 		This method allows user to read data stored in key-value format
 	 */
 	public static String getConfigs(String key) {
 		String config = null;
@@ -81,7 +81,7 @@ public class Utils {
 	 * @param key
 	 * @return
 	 * 
-	 * This is rad JSON element from response 
+	 * 		This is rad JSON element from response
 	 */
 	public static String getJsonElement(Response response, String key) {
 		String element = null;
@@ -99,8 +99,7 @@ public class Utils {
 	/**
 	 * @param response
 	 * @param key
-	 * @return
-	 * This is use to retrieve JSON Element from JSON ARRAY
+	 * @return This is use to retrieve JSON Element from JSON ARRAY
 	 */
 	public static List<?> getElementFromJsonArray(Response response, String key) {
 
@@ -116,7 +115,7 @@ public class Utils {
 	 * @param json
 	 * @param key
 	 * 
-	 * This method parse JSON element from JSONObject
+	 *             This method parse JSON element from JSONObject
 	 */
 	public static void parseObject(JSONObject json, String key) {
 		System.out.println(json.get(key));
@@ -126,7 +125,8 @@ public class Utils {
 	 * @param json
 	 * @param key
 	 * 
-	 * This method use to retrieve JSON element from Complex JSON Response
+	 *             This method use to retrieve JSON element from Complex JSON
+	 *             Response
 	 */
 	public static void getKey(JSONObject json, String key) {
 
@@ -161,7 +161,7 @@ public class Utils {
 					}
 
 				} catch (Exception e) {
-					// TODO: handle exception
+
 				}
 
 			}
@@ -186,39 +186,63 @@ public class Utils {
 	 * @param response
 	 * @return
 	 * 
-	 * This method uses the concept of De-serialization and set values from Response to fields
+	 * 		This method uses the concept of De-serialization and set values from
+	 *         Response to fields
 	 */
 	public static List<Fields> extractAndSetFields(ResponsePojo response) {
 		List<Fields> apiRes = new ArrayList<Fields>();
 
 		int dataSize = response.getData().size();
+		Fields fields;
+
 		try {
 			for (int i = 0; i < dataSize; i++) {
+				fields = new Fields();
+				int arrSize = response.getData().get(i).size() - 1;
 
-				Fields fields = new Fields();
-				fields.setDes(response.getData().get(i).get(0));
-				fields.setOrbitId(response.getData().get(i).get(1));
-				fields.setJd(response.getData().get(i).get(2));
-				fields.setCd(response.getData().get(i).get(3));
-				fields.setDist(BigDecimal.valueOf(Double.parseDouble(response.getData().get(i).get(4))));
-				fields.setDistMin(BigDecimal.valueOf(Double.parseDouble(response.getData().get(i).get(5))));
-				fields.setDistMax(BigDecimal.valueOf(Double.parseDouble(response.getData().get(i).get(6))));
-				fields.setvRel(response.getData().get(i).get(7));
-				fields.setvInf(response.getData().get(i).get(8));
-				fields.settSigmaF(response.getData().get(i).get(9));
-				fields.setH(response.getData().get(i).get(10));
-
-				if (null != response.getData().get(i).get(11)) {
+				if ((arrSize >= 0)) {
+					fields.setDes(response.getData().get(i).get((0)));
+				}
+				if ((arrSize >= 1)) {
+					fields.setOrbitId(response.getData().get(i).get((1)));
+				}
+				if ((arrSize >= 2)) {
+					fields.setJd(response.getData().get(i).get(2));
+				}
+				if ((arrSize >= 3)) {
+					fields.setCd(response.getData().get(i).get(3));
+				}
+				if ((arrSize >= 4)) {
+					fields.setDist(BigDecimal.valueOf(Double.parseDouble(response.getData().get(i).get(4))));
+				}
+				if ((arrSize >= 5)) {
+					fields.setDistMin(BigDecimal.valueOf(Double.parseDouble(response.getData().get(i).get(5))));
+				}
+				if ((arrSize >= 6)) {
+					fields.setDistMax(BigDecimal.valueOf(Double.parseDouble(response.getData().get(i).get(6))));
+				}
+				if ((arrSize >= 7)) {
+					fields.setvRel(response.getData().get(i).get(7));
+				}
+				if ((arrSize >= 8)) {
+					fields.setvInf(response.getData().get(i).get(8));
+				}
+				if ((arrSize >= 9)) {
+					fields.settSigmaF(response.getData().get(i).get((9)));
+				}
+				if ((arrSize >= 10)) {
+					fields.setH(response.getData().get(i).get((10)));
+				}
+				if ((arrSize >= 11 && response.getData().get(i).get(11) != null)) {
 					fields.setDiameter(Double.parseDouble(response.getData().get(i).get(11)));
 				}
-				if (null != response.getData().get(i).get(12)) {
+				if ((arrSize >= 12 && response.getData().get(i).get(12) != null)) {
 					fields.setDiameterSigma(Double.parseDouble(response.getData().get(i).get(12)));
 				}
-
 				apiRes.add(fields);
 
 			}
-		} catch (ArrayIndexOutOfBoundsException e) {
+		} catch (IndexOutOfBoundsException e) {
 			LOGGER.error("Response is empty" + e.getMessage());
 		} catch (NumberFormatException e) {
 			LOGGER.error("Expected BigDecimal or Double data type" + e.getMessage());
