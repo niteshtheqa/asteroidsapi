@@ -35,7 +35,7 @@ public class BaseTest {
 	static {
 		try {
 
-			String log4jConfPath = Paths.get("./src/main/java/configurations/log4j.properties").toAbsolutePath()
+			String log4jConfPath = Paths.get("./src/main/resources/log4j.properties").toAbsolutePath()
 					.normalize().toString();
 			// loading log4j properties file
 			Log4j.load(new FileInputStream(log4jConfPath));
@@ -48,7 +48,7 @@ public class BaseTest {
 	}
 
 	public BaseTest() {
-		RestAssured.baseURI = "https://ssd-api.jpl.nasa.gov/cad.api";
+		RestAssured.baseURI = Utils.getConfigs("baseURI");
 
 	}
 
