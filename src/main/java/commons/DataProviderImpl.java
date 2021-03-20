@@ -15,7 +15,7 @@ public class DataProviderImpl {
 	 */
 	@DataProvider(name = "DesignationProvider")
 	public Object[][] getDataFromDataprovider() {
-		return new Object[][] { { "141P", "K202/2" }, { "433", "658" } };
+		return new Object[][] { { "141P", "K202/3" }, { "433", "658" } };
 
 	}
 }

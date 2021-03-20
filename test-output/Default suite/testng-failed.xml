@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apitests.TestEarthCloseApproach">
+      <class name="hellosvctest.TestHelloService">
         <methods>
           <include name="setUp"/>
+          <include name="verifyHelloSvcGivesResponseWithSingleWord"/>
           <include name="tearDown"/>
-          <include name="TestEarthCloseApproachSortedDescending"/>
+          <include name="verifyHelloSvcReturnsWholeString"/>
+          <include name="verifyHelloSvcShouldNotBreakForEmptyString"/>
+          <include name="verifyHelloSvcRevertsNumericString"/>
+          <include name="verifyHelloServiceUpAndRunning"/>
         </methods>
-      </class> <!-- apitests.TestEarthCloseApproach -->
+      </class> <!-- hellosvctest.TestHelloService -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

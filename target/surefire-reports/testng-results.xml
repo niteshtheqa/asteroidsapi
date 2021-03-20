@@ -1,53 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20745" started-at="2021-03-17T11:48:05 IST" finished-at="2021-03-17T11:48:25 IST">
+  <suite name="Suite" duration-ms="23927" started-at="2021-03-20T14:59:59 IST" finished-at="2021-03-20T15:00:23 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20745" started-at="2021-03-17T11:48:05 IST" finished-at="2021-03-17T11:48:25 IST">
+    <test name="Test" duration-ms="23927" started-at="2021-03-20T14:59:59 IST" finished-at="2021-03-20T15:00:23 IST">
+      <class name="hellosvctest.TestHelloService">
+        <test-method status="PASS" signature="verifyHelloServiceUpAndRunning()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="verifyHelloServiceUpAndRunning" duration-ms="399" started-at="2021-03-20T15:00:12 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelloServiceUpAndRunning -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="setUp" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:12 IST" finished-at="2021-03-20T15:00:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="setUp" is-config="true" duration-ms="2" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHelloSvcGivesResponseWithSingleWord()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="verifyHelloSvcGivesResponseWithSingleWord" duration-ms="89" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelloSvcGivesResponseWithSingleWord -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="tearDown" is-config="true" duration-ms="2" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="setUp" is-config="true" duration-ms="3" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHelloSvcReturnsWholeString()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="verifyHelloSvcReturnsWholeString" duration-ms="106" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelloSvcReturnsWholeString -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="tearDown" is-config="true" duration-ms="2" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="setUp" is-config="true" duration-ms="4" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHelloSvcRevertsNumericString()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="verifyHelloSvcRevertsNumericString" duration-ms="94" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelloSvcRevertsNumericString -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="tearDown" is-config="true" duration-ms="4" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="setUp" is-config="true" duration-ms="2" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHelloSvcShouldNotBreakForEmptyString()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="verifyHelloSvcShouldNotBreakForEmptyString" duration-ms="77" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHelloSvcShouldNotBreakForEmptyString -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:hellosvctest.TestHelloService@12f41634]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- hellosvctest.TestHelloService -->
       <class name="apitests.TestAllCloseApproach">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="setUp" is-config="true" duration-ms="2" started-at="2021-03-17T11:48:17 IST" finished-at="2021-03-17T11:48:17 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="setUp" is-config="true" duration-ms="2" started-at="2021-03-20T15:00:13 IST" finished-at="2021-03-20T15:00:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestAllCloseApproachAsteroidBetweenDateRange()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="TestAllCloseApproachAsteroidBetweenDateRange" duration-ms="1696" started-at="2021-03-17T11:48:17 IST" description="Verify all close-approach data for asteroid 433 Eros within 0.2 au between 1900-Jan-01 and 2100-Jan-01" finished-at="2021-03-17T11:48:19 IST">
+        <test-method status="PASS" signature="VerifyAllCloseApproachAsteroidResponseIsNotNull()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="VerifyAllCloseApproachAsteroidResponseIsNotNull" duration-ms="1572" started-at="2021-03-20T15:00:13 IST" description="Verify all close-approach data is not NULL/Empty" finished-at="2021-03-20T15:00:15 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestAllCloseApproachAsteroidBetweenDateRange -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:19 IST" finished-at="2021-03-17T11:48:19 IST">
+        </test-method> <!-- VerifyAllCloseApproachAsteroidResponseIsNotNull -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="setUp" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:15 IST" finished-at="2021-03-20T15:00:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:15 IST" finished-at="2021-03-20T15:00:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="setUp" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:19 IST" finished-at="2021-03-17T11:48:19 IST">
+        <test-method status="PASS" signature="VerifyAllCloseApproachAsteroidResponseSignatureIsValid()[pri:1, instance:apitests.TestAllCloseApproach@13c27452]" name="VerifyAllCloseApproachAsteroidResponseSignatureIsValid" duration-ms="1621" started-at="2021-03-20T15:00:15 IST" description="Verify Earth close-approach Signature is valid" depends-on-methods="apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseIsNotNull" finished-at="2021-03-20T15:00:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestAllCloseApproachAsteroidResponseIsNotNull()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="TestAllCloseApproachAsteroidResponseIsNotNull" duration-ms="1645" started-at="2021-03-17T11:48:19 IST" description="Verify all close-approach data is not NULL/Empty" finished-at="2021-03-17T11:48:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestAllCloseApproachAsteroidResponseIsNotNull -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:20 IST" finished-at="2021-03-17T11:48:20 IST">
+        </test-method> <!-- VerifyAllCloseApproachAsteroidResponseSignatureIsValid -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:16 IST" finished-at="2021-03-20T15:00:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="setUp" is-config="true" duration-ms="2" started-at="2021-03-17T11:48:20 IST" finished-at="2021-03-17T11:48:20 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="setUp" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:16 IST" finished-at="2021-03-20T15:00:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestAllCloseApproachAsteroidWithinDistanceRange()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="TestAllCloseApproachAsteroidWithinDistanceRange" duration-ms="1579" started-at="2021-03-17T11:48:20 IST" description="Verify all close-approach data for asteroid 433 Eros within 0.2 au" finished-at="2021-03-17T11:48:22 IST">
+        <test-method status="PASS" signature="VerifyAllCloseApproachAsteroidBetweenDateRange()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="VerifyAllCloseApproachAsteroidBetweenDateRange" duration-ms="1553" started-at="2021-03-20T15:00:16 IST" description="Verify all close-approach data for asteroid 433 Eros within 0.2 au between 1900-Jan-01 and 2100-Jan-01" depends-on-methods="apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseSignatureIsValid" finished-at="2021-03-20T15:00:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestAllCloseApproachAsteroidWithinDistanceRange -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:22 IST" finished-at="2021-03-17T11:48:22 IST">
+        </test-method> <!-- VerifyAllCloseApproachAsteroidBetweenDateRange -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="setUp" is-config="true" duration-ms="16" started-at="2021-03-20T15:00:18 IST" finished-at="2021-03-20T15:00:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:18 IST" finished-at="2021-03-20T15:00:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="setUp" is-config="true" duration-ms="4" started-at="2021-03-17T11:48:22 IST" finished-at="2021-03-17T11:48:22 IST">
+        <test-method status="PASS" signature="VerifyAllCloseApproachAsteroidsWithinDistanceRange()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="VerifyAllCloseApproachAsteroidsWithinDistanceRange" duration-ms="1587" started-at="2021-03-20T15:00:18 IST" description="Verify all close-approach data for asteroid 433 Eros within 0.2 au" depends-on-methods="apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseSignatureIsValid" finished-at="2021-03-20T15:00:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllCloseApproachAsteroidsWithinDistanceRange -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:19 IST" finished-at="2021-03-20T15:00:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="setUp" is-config="true" duration-ms="15" started-at="2021-03-20T15:00:19 IST" finished-at="2021-03-20T15:00:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestOrbitIDWithRespectiveDesignationValue(java.lang.String,java.lang.String)[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="TestOrbitIDWithRespectiveDesignationValue" duration-ms="1617" started-at="2021-03-17T11:48:22 IST" description="Verify Orbit ID with different inputs of Designation" data-provider="DesignationProvider" finished-at="2021-03-17T11:48:24 IST">
+        <test-method name="VerifyOrbitIDWithRespectiveDesignationValue" signature="VerifyOrbitIDWithRespectiveDesignationValue(java.lang.String,java.lang.String)[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" status="PASS" duration-ms="1556" finished-at="2021-03-20T15:00:21 IST" started-at="2021-03-20T15:00:19 IST" depends-on-methods="apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseSignatureIsValid" data-provider="DesignationProvider" description="Verify Orbit ID with different inputs of Designation">
           <params>
             <param index="0">
               <value>
@@ -56,22 +130,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[K202/2]]>
+                <![CDATA[K202/3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestOrbitIDWithRespectiveDesignationValue -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-17T11:48:24 IST" finished-at="2021-03-17T11:48:24 IST">
+        </test-method> <!-- VerifyOrbitIDWithRespectiveDesignationValue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:21 IST" finished-at="2021-03-20T15:00:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="setUp" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:24 IST" finished-at="2021-03-17T11:48:24 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="setUp" is-config="true" duration-ms="16" started-at="2021-03-20T15:00:21 IST" finished-at="2021-03-20T15:00:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestOrbitIDWithRespectiveDesignationValue(java.lang.String,java.lang.String)[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="TestOrbitIDWithRespectiveDesignationValue" duration-ms="1615" started-at="2021-03-17T11:48:24 IST" description="Verify Orbit ID with different inputs of Designation" data-provider="DesignationProvider" finished-at="2021-03-17T11:48:25 IST">
+        <test-method name="VerifyOrbitIDWithRespectiveDesignationValue" signature="VerifyOrbitIDWithRespectiveDesignationValue(java.lang.String,java.lang.String)[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" status="PASS" duration-ms="1576" finished-at="2021-03-20T15:00:23 IST" started-at="2021-03-20T15:00:21 IST" depends-on-methods="apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseSignatureIsValid" data-provider="DesignationProvider" description="Verify Orbit ID with different inputs of Designation">
           <params>
             <param index="0">
               <value>
@@ -86,34 +160,58 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestOrbitIDWithRespectiveDesignationValue -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@158a8276]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:25 IST" finished-at="2021-03-17T11:48:25 IST">
+        </test-method> <!-- VerifyOrbitIDWithRespectiveDesignationValue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestAllCloseApproach@13c27452]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:23 IST" finished-at="2021-03-20T15:00:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- apitests.TestAllCloseApproach -->
       <class name="apitests.TestEarthCloseApproach">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestEarthCloseApproach@b3ca52e]" name="setUp" is-config="true" duration-ms="32" started-at="2021-03-17T11:48:05 IST" finished-at="2021-03-17T11:48:05 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="setUp" is-config="true" duration-ms="624" started-at="2021-03-20T14:59:59 IST" finished-at="2021-03-20T14:59:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestEarthCloseApproachSortedAscending()[pri:0, instance:apitests.TestEarthCloseApproach@b3ca52e]" name="TestEarthCloseApproachSortedAscending" duration-ms="8214" started-at="2021-03-17T11:48:05 IST" description="Verify Earth close-approach sorted data by distance in Ascending Order" finished-at="2021-03-17T11:48:13 IST">
+        <test-method status="PASS" signature="VerifyEarthCloseApproachAsteroidResponseIsNotNull()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="VerifyEarthCloseApproachAsteroidResponseIsNotNull" duration-ms="7459" started-at="2021-03-20T14:59:59 IST" description="Verify Earth close-approach data is not NULL/Empty" finished-at="2021-03-20T15:00:07 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestEarthCloseApproachSortedAscending -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestEarthCloseApproach@b3ca52e]" name="tearDown" is-config="true" duration-ms="7" started-at="2021-03-17T11:48:13 IST" finished-at="2021-03-17T11:48:13 IST">
+        </test-method> <!-- VerifyEarthCloseApproachAsteroidResponseIsNotNull -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:07 IST" finished-at="2021-03-20T15:00:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestEarthCloseApproach@b3ca52e]" name="setUp" is-config="true" duration-ms="2" started-at="2021-03-17T11:48:13 IST" finished-at="2021-03-17T11:48:13 IST">
+        <test-method status="PASS" signature="VerifyEarthCloseApproachAsteroidResponseSignatureIsValid()[pri:1, instance:apitests.TestEarthCloseApproach@2a556333]" name="VerifyEarthCloseApproachAsteroidResponseSignatureIsValid" duration-ms="1841" started-at="2021-03-20T15:00:07 IST" description="Verify Earth close-approach Signature is valid" finished-at="2021-03-20T15:00:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEarthCloseApproachAsteroidResponseSignatureIsValid -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="setUp" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:07 IST" finished-at="2021-03-20T15:00:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="TestEarthCloseApproachSortedDescending()[pri:0, instance:apitests.TestEarthCloseApproach@b3ca52e]" name="TestEarthCloseApproachSortedDescending" duration-ms="4063" started-at="2021-03-17T11:48:13 IST" description="Verify Earth close-approach sorted data by distance in Descending Order" finished-at="2021-03-17T11:48:17 IST">
+        <test-method status="PASS" signature="TestEarthCloseApproachSortedAscending()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="TestEarthCloseApproachSortedAscending" duration-ms="1820" started-at="2021-03-20T15:00:09 IST" description="Verify Earth close-approach sorted data by distance in Ascending Order" depends-on-methods="apitests.TestEarthCloseApproach.VerifyEarthCloseApproachAsteroidResponseSignatureIsValid" finished-at="2021-03-20T15:00:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestEarthCloseApproachSortedAscending -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="setUp" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:09 IST" finished-at="2021-03-20T15:00:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:09 IST" finished-at="2021-03-20T15:00:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:10 IST" finished-at="2021-03-20T15:00:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="setUp" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:10 IST" finished-at="2021-03-20T15:00:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TestEarthCloseApproachSortedDescending()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="TestEarthCloseApproachSortedDescending" duration-ms="1748" started-at="2021-03-20T15:00:10 IST" description="Verify Earth close-approach sorted data by distance in Descending Order" depends-on-methods="apitests.TestEarthCloseApproach.VerifyEarthCloseApproachAsteroidResponseSignatureIsValid" finished-at="2021-03-20T15:00:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestEarthCloseApproachSortedDescending -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestEarthCloseApproach@b3ca52e]" name="tearDown" is-config="true" duration-ms="1" started-at="2021-03-17T11:48:17 IST" finished-at="2021-03-17T11:48:17 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:apitests.TestEarthCloseApproach@2a556333]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-03-20T15:00:12 IST" finished-at="2021-03-20T15:00:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

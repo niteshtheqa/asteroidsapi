@@ -22,7 +22,7 @@ import commons.DataProviderImpl;
 import freemarker.template.utility.DateUtil.DateParseException;
 import pojo.Fields;
 import pojo.ResponsePojo;
-import reporter.ExtentReportListner;
+import reporter.ExtentReporter;
 import utils.Utils;
 
 /**
@@ -30,7 +30,7 @@ import utils.Utils;
  * @Project Title SBDB - API Automation
  * 
  */
-@Listeners(ExtentReportListner.class)
+@Listeners(ExtentReporter.class)
 public class TestAllCloseApproach extends BaseTest {
 
 	static final Properties Log4j = new Properties();

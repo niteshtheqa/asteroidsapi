@@ -28,6 +28,8 @@ import utils.Utils;
 public class BaseTest {
 	public APIActions apiActions;
 	public Response response;
+	public String baseURIHelloSvc;
+	public String responseStr;
 
 	static final Properties Log4j = new Properties();
 	public static Logger LOGGER = Logger.getLogger(CommonFunctions.class);
@@ -35,8 +37,8 @@ public class BaseTest {
 	static {
 		try {
 
-			String log4jConfPath = Paths.get("./src/main/resources/log4j.properties").toAbsolutePath()
-					.normalize().toString();
+			String log4jConfPath = Paths.get("./src/main/resources/log4j.properties").toAbsolutePath().normalize()
+					.toString();
 			// loading log4j properties file
 			Log4j.load(new FileInputStream(log4jConfPath));
 
@@ -47,16 +49,17 @@ public class BaseTest {
 		}
 	}
 
-	public BaseTest() {
-		RestAssured.baseURI = Utils.getConfigs("baseURI");
-
-	}
-
 	@BeforeMethod()
 	public void setUp() throws IOException {
 		apiActions = new APIActions();
 		LOGGER.info("Test execution started...");
 		Utils.loadProperties();
+		RestAssured.baseURI = Utils.getConfigs("baseURI");
+
+		// configs for hello service
+		baseURIHelloSvc = "http://127.0.0.1:" + Utils.getConfigs("port") + "/";
+		responseStr = "Hi there, !";
+		RestAssured.baseURI = baseURIHelloSvc;
 
 	}
 

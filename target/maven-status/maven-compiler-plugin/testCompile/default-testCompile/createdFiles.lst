@@ -1,3 +1,4 @@
-apitests\TestAllCloseApproach.class
 basetest\BaseTest.class
+apitests\TestAllCloseApproach.class
+hellosvctest\TestHelloService.class
 apitests\TestEarthCloseApproach.class

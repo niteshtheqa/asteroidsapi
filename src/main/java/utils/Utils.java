@@ -39,7 +39,7 @@ public class Utils {
 	 *         This loads properties file
 	 */
 	public static Properties loadProperties() {
-		String PATH = Paths.get("./src/main/java/configurations/config.properties").toAbsolutePath().normalize()
+		String PATH = Paths.get("./src/main/resources/config.properties").toAbsolutePath().normalize()
 				.toString();
 		Properties prop = new Properties();
 		FileInputStream fileInputStream = null;

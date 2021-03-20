@@ -21,7 +21,7 @@ import commons.CommonFunctions;
 import commons.QueryParameters;
 import pojo.Fields;
 import pojo.ResponsePojo;
-import reporter.ExtentReportListner;
+import reporter.ExtentReporter;
 import utils.Utils;
 
 /**
@@ -30,7 +30,7 @@ import utils.Utils;
  * 
  */
 
-@Listeners(ExtentReportListner.class)
+@Listeners(ExtentReporter.class)
 public class TestEarthCloseApproach extends BaseTest {
 
 	static final Properties Log4j = new Properties();
