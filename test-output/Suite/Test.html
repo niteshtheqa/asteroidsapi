@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>10/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 20 14:50:13 IST 2021</td>
+<td>Started on:</td><td>Sun Mar 21 13:00:57 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31567 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33194 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -85,14 +85,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -162,8 +162,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at hellosvctest.TestHelloService.verifyHelloServiceUpAndRunning(TestHelloService.java:32)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 52 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace51376124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace51376124'><pre>java.net.ConnectException: Connection refused: connect
+... Removed 52 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538849250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538849250'><pre>java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -172,14 +172,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -303,7 +303,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>hellosvctest.TestHelloService@612fc6eb</td></tr>
+<td>hellosvctest.TestHelloService@1e7c7811</td></tr>
 <tr>
 <td title='hellosvctest.TestHelloService.verifyHelloSvcGivesResponseWithSingleWord()'><b>verifyHelloSvcGivesResponseWithSingleWord</b><br>Test class: hellosvctest.TestHelloService</td>
 <td><div><pre>java.net.ConnectException: Connection refused: connect
@@ -315,14 +315,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -382,8 +382,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at hellosvctest.TestHelloService.verifyHelloSvcGivesResponseWithSingleWord(TestHelloService.java:41)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931911789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace931911789'><pre>java.net.ConnectException: Connection refused: connect
+... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace928734079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace928734079'><pre>java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -392,14 +392,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -508,7 +508,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>hellosvctest.TestHelloService@612fc6eb</td></tr>
+<td>hellosvctest.TestHelloService@1e7c7811</td></tr>
 <tr>
 <td title='hellosvctest.TestHelloService.verifyHelloSvcReturnsWholeString()'><b>verifyHelloSvcReturnsWholeString</b><br>Test class: hellosvctest.TestHelloService</td>
 <td><div><pre>java.net.ConnectException: Connection refused: connect
@@ -520,14 +520,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -587,8 +587,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at hellosvctest.TestHelloService.verifyHelloSvcReturnsWholeString(TestHelloService.java:57)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1300528434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1300528434'><pre>java.net.ConnectException: Connection refused: connect
+... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1773336805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1773336805'><pre>java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -597,14 +597,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -713,7 +713,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>hellosvctest.TestHelloService@612fc6eb</td></tr>
+<td>hellosvctest.TestHelloService@1e7c7811</td></tr>
 <tr>
 <td title='hellosvctest.TestHelloService.verifyHelloSvcRevertsNumericString()'><b>verifyHelloSvcRevertsNumericString</b><br>Test class: hellosvctest.TestHelloService</td>
 <td><div><pre>java.net.ConnectException: Connection refused: connect
@@ -725,14 +725,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -792,8 +792,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at hellosvctest.TestHelloService.verifyHelloSvcRevertsNumericString(TestHelloService.java:49)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace419280591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace419280591'><pre>java.net.ConnectException: Connection refused: connect
+... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace518167684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace518167684'><pre>java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -802,14 +802,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -918,7 +918,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>hellosvctest.TestHelloService@612fc6eb</td></tr>
+<td>hellosvctest.TestHelloService@1e7c7811</td></tr>
 <tr>
 <td title='hellosvctest.TestHelloService.verifyHelloSvcShouldNotBreakForEmptyString()'><b>verifyHelloSvcShouldNotBreakForEmptyString</b><br>Test class: hellosvctest.TestHelloService</td>
 <td><div><pre>java.net.ConnectException: Connection refused: connect
@@ -930,14 +930,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -997,8 +997,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at hellosvctest.TestHelloService.verifyHelloSvcShouldNotBreakForEmptyString(TestHelloService.java:64)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1147394515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1147394515'><pre>java.net.ConnectException: Connection refused: connect
+... Removed 47 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13643661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13643661'><pre>java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -1007,14 +1007,14 @@ function toggleAllBoxes() {
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
 	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
 	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2128)
 	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
@@ -1123,7 +1123,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>hellosvctest.TestHelloService@612fc6eb</td></tr>
+<td>hellosvctest.TestHelloService@1e7c7811</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1136,52 +1136,52 @@ function toggleAllBoxes() {
 <td title='apitests.TestEarthCloseApproach.TestEarthCloseApproachSortedAscending()'><b>TestEarthCloseApproachSortedAscending</b><br>Test class: apitests.TestEarthCloseApproach<br>Test method: Verify Earth close-approach sorted data by distance in Ascending Order</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestEarthCloseApproach@eafc191</td></tr>
+<td>apitests.TestEarthCloseApproach@7a3d45bd</td></tr>
 <tr>
 <td title='apitests.TestEarthCloseApproach.TestEarthCloseApproachSortedDescending()'><b>TestEarthCloseApproachSortedDescending</b><br>Test class: apitests.TestEarthCloseApproach<br>Test method: Verify Earth close-approach sorted data by distance in Descending Order</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestEarthCloseApproach@eafc191</td></tr>
+<td>apitests.TestEarthCloseApproach@7a3d45bd</td></tr>
 <tr>
 <td title='apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidBetweenDateRange()'><b>VerifyAllCloseApproachAsteroidBetweenDateRange</b><br>Test class: apitests.TestAllCloseApproach<br>Test method: Verify all close-approach data for asteroid 433 Eros within 0.2 au between 1900-Jan-01 and 2100-Jan-01</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestAllCloseApproach@1060b431</td></tr>
+<td>apitests.TestAllCloseApproach@77ec78b9</td></tr>
 <tr>
 <td title='apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseIsNotNull()'><b>VerifyAllCloseApproachAsteroidResponseIsNotNull</b><br>Test class: apitests.TestAllCloseApproach<br>Test method: Verify all close-approach data is not NULL/Empty</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestAllCloseApproach@1060b431</td></tr>
+<td>apitests.TestAllCloseApproach@77ec78b9</td></tr>
 <tr>
 <td title='apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidResponseSignatureIsValid()'><b>VerifyAllCloseApproachAsteroidResponseSignatureIsValid</b><br>Test class: apitests.TestAllCloseApproach<br>Test method: Verify Earth close-approach Signature is valid</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestAllCloseApproach@1060b431</td></tr>
+<td>apitests.TestAllCloseApproach@77ec78b9</td></tr>
 <tr>
 <td title='apitests.TestAllCloseApproach.VerifyAllCloseApproachAsteroidsWithinDistanceRange()'><b>VerifyAllCloseApproachAsteroidsWithinDistanceRange</b><br>Test class: apitests.TestAllCloseApproach<br>Test method: Verify all close-approach data for asteroid 433 Eros within 0.2 au</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestAllCloseApproach@1060b431</td></tr>
+<td>apitests.TestAllCloseApproach@77ec78b9</td></tr>
 <tr>
 <td title='apitests.TestEarthCloseApproach.VerifyEarthCloseApproachAsteroidResponseIsNotNull()'><b>VerifyEarthCloseApproachAsteroidResponseIsNotNull</b><br>Test class: apitests.TestEarthCloseApproach<br>Test method: Verify Earth close-approach data is not NULL/Empty</td>
 <td></td>
 <td>4</td>
-<td>apitests.TestEarthCloseApproach@eafc191</td></tr>
+<td>apitests.TestEarthCloseApproach@7a3d45bd</td></tr>
 <tr>
 <td title='apitests.TestEarthCloseApproach.VerifyEarthCloseApproachAsteroidResponseSignatureIsValid()'><b>VerifyEarthCloseApproachAsteroidResponseSignatureIsValid</b><br>Test class: apitests.TestEarthCloseApproach<br>Test method: Verify Earth close-approach Signature is valid</td>
 <td></td>
-<td>1</td>
-<td>apitests.TestEarthCloseApproach@eafc191</td></tr>
+<td>3</td>
+<td>apitests.TestEarthCloseApproach@7a3d45bd</td></tr>
 <tr>
 <td title='apitests.TestAllCloseApproach.VerifyOrbitIDWithRespectiveDesignationValue()'><b>VerifyOrbitIDWithRespectiveDesignationValue</b><br>Test class: apitests.TestAllCloseApproach<br>Test method: Verify Orbit ID with different inputs of Designation<br>Parameters: 141P, K202/3</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestAllCloseApproach@1060b431</td></tr>
+<td>apitests.TestAllCloseApproach@77ec78b9</td></tr>
 <tr>
 <td title='apitests.TestAllCloseApproach.VerifyOrbitIDWithRespectiveDesignationValue()'><b>VerifyOrbitIDWithRespectiveDesignationValue</b><br>Test class: apitests.TestAllCloseApproach<br>Test method: Verify Orbit ID with different inputs of Designation<br>Parameters: 433, 658</td>
 <td></td>
 <td>1</td>
-<td>apitests.TestAllCloseApproach@1060b431</td></tr>
+<td>apitests.TestAllCloseApproach@77ec78b9</td></tr>
 </table><p>
 </body>
 </html>

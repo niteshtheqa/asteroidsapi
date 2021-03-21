@@ -13,9 +13,6 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-
 import basetest.BaseTest;
 import commons.CommonFunctions;
 import commons.QueryParameters;
@@ -37,8 +34,7 @@ public class TestEarthCloseApproach extends BaseTest {
 	public static Logger LOGGER = Logger.getLogger(TestEarthCloseApproach.class);
 
 	public QueryParameters param = new QueryParameters();
-	public static ExtentReports report;
-	public static ExtentTest logger;
+
 
 	@Test(priority = 0, description = "Verify Earth close-approach data is not NULL/Empty")
 	public void VerifyEarthCloseApproachAsteroidResponseIsNotNull() throws IOException {
