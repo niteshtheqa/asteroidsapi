@@ -22,7 +22,7 @@ Build the project</p>
 <p class="has-line-data" data-line-start="32" data-line-end="36">##To prepare environment for TestHelloService<br>
 Follow the instruction to launch service using kubernetes and minikube<br>
 Document attached with project and seperate mail as well “Steps to create hello-service”<br>
-Please follow 2. Using kubernetes Section to create and run hell-service in minikube pods</p>
+Please follow 2. Using kubernetes Section to create and run hello-service in minikube pods</p>
 <p class="has-line-data" data-line-start="37" data-line-end="38">##Running the asteroidsapi tests on local machine</p>
 <p class="has-line-data" data-line-start="39" data-line-end="43">GO to eclipse<br>
 Right click on Project name i.e. com.qa.api.sbdb<br>
