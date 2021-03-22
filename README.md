@@ -29,8 +29,11 @@ Right click on Project name i.e. com.qa.api.sbdb<br>
 Run As =&gt; Maven Clean =&gt; Maven Test<br>
 OR</p>
 <p class="has-line-data" data-line-start="44" data-line-end="47">Go to Project Explorer and Open CMD<br>
-Use below maven command to run Test Suite ==&gt; mvn clean test<br>
-OR #To run single test class ==&gt;mvn -Dtest = TestClassName clean test e.g. mvn -Dtest =TestAllCloseApproach clean test</p>
+Use below maven command to run Test Suite ==&gt; mvn clean test<br></p>
+<p OR </p>
+ <p   class="has-line-data" >#To run single test class ==&gt;</p>
+ <p  class="has-line-data" > mvn -Dtest = TestClassName clean test </p>
+  <p  class="has-line-data" > e.g. mvn -Dtest =TestAllCloseApproach clean test</p>
 <p class="has-line-data" data-line-start="48" data-line-end="54">*Note To RUN TestHelloService in local machine<br>
 You need to first create hello-service and run it sucessfully.<br>
 you will find Port number when you run command minikube service hello-service<br>
